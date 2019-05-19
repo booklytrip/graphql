@@ -1,0 +1,29 @@
+version: '2'
+services:
+  graphql:
+    container_name: graphql
+    image: registry.gitlab.com/bookly/graphql:latest
+    restart: always
+    environment:
+      - NODE_ENV=production
+    networks:
+      - mongodb
+      - elasticsearch
+      - redis
+      - graphql
+      - nginx
+      - mailer
+
+networks:
+  mongodb:
+    external: true
+  elasticsearch:
+    external: true
+  redis:
+    external: true
+  graphql:
+    external: true
+  nginx:
+    external: true
+  mailer:
+    external: true

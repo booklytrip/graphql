@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<payment_types_document project_id="74747" currency="EUR">
+   <country code="lv">
+      <title language="lt"><![CDATA[Latvija]]></title>
+      <title language="en"><![CDATA[Latvia]]></title>
+      <title language="ru"><![CDATA[Латвия]]></title>
+      <title language="lv"><![CDATA[Latvija]]></title>
+      <title language="ee"><![CDATA[Läti]]></title>
+      <title language="et"><![CDATA[Läti]]></title>
+      <title language="pl"><![CDATA[Łotwa]]></title>
+      <title language="bg"><![CDATA[Latvia]]></title>
+      <payment_group key="e-banking">
+         <title language="lt"><![CDATA[Elektroninė bankininkystė]]></title>
+         <title language="en"><![CDATA[Electronic banking]]></title>
+         <title language="ru"><![CDATA[Эл. банковские системы]]></title>
+         <title language="lv"><![CDATA[Elektroniskie norēķini]]></title>
+         <title language="ee"><![CDATA[Elektrooniline pangandus]]></title>
+         <title language="et"><![CDATA[Elektrooniline pangandus]]></title>
+         <title language="pl"><![CDATA[Bankowość elektroniczna]]></title>
+         <title language="bg"><![CDATA[Electronic banking]]></title>
+         <payment_type key="parexlv">
+            <logo_url language="lt"><![CDATA[https://bank.paysera.com/assets/image/payment_types/parexlv.png]]></logo_url>
+            <title language="lt"><![CDATA[AB Citadele bankas Latvija]]></title>
+            <logo_url language="en"><![CDATA[https://bank.paysera.com/assets/image/payment_types/parexlv.png]]></logo_url>
+            <title language="en"><![CDATA[JSC bank "Citadele" Latvia]]></title>
+            <logo_url language="ru"><![CDATA[https://bank.paysera.com/assets/image/payment_types/parexlv.png]]></logo_url>
+            <title language="ru"><![CDATA[АО банк "Citadele" Латвия]]></title>
+            <logo_url language="lv"><![CDATA[https://bank.paysera.com/assets/image/payment_types/parexlv.png]]></logo_url>
+            <title language="lv"><![CDATA[AS "Citadele" banka Latvija]]></title>
+            <logo_url language="ee"><![CDATA[https://bank.paysera.com/assets/image/payment_types/parexlv.png]]></logo_url>
+            <title language="ee"><![CDATA[JSC pank "Citadele" Läti]]></title>
+            <logo_url language="et"><![CDATA[https://bank.paysera.com/assets/image/payment_types/parexlv.png]]></logo_url>
+            <title language="et"><![CDATA[JSC pank "Citadele" Läti]]></title>
+            <logo_url language="pl"><![CDATA[https://bank.paysera.com/assets/image/payment_types/parexlv.png]]></logo_url>
+            <title language="pl"><![CDATA[AB Citadele bank Łotwa]]></title>
+            <logo_url language="bg"><![CDATA[https://bank.paysera.com/assets/image/payment_types/parexlv.png]]></logo_url>
+            <title language="bg"><![CDATA[JSC bank "Citadele" Latvia]]></title>
+            <min amount="28" currency="EUR" />
+            <is_iban>1</is_iban>
+            <base_currency><![CDATA[EUR]]></base_currency>
+         </payment_type>
+         <payment_type key="nordealv">
+            <logo_url language="lt"><![CDATA[https://bank.paysera.com/assets/image/payment_types/nordealv.png]]></logo_url>
+            <title language="lt"><![CDATA[AB Nordea bankas Latvija]]></title>
+            <logo_url language="en"><![CDATA[https://bank.paysera.com/assets/image/payment_types/nordealv.png]]></logo_url>
+            <title language="en"><![CDATA[JSC bank "Nordea" Latvia]]></title>
+            <logo_url language="ru"><![CDATA[https://bank.paysera.com/assets/image/payment_types/nordealv.png]]></logo_url>
+            <title language="ru"><![CDATA[АО банк "Nordea" Латвия]]></title>
+            <logo_url language="lv"><![CDATA[https://bank.paysera.com/assets/image/payment_types/nordealv.png]]></logo_url>
+            <title language="lv"><![CDATA[AS "Nordea" banka Latvija]]></title>
+            <logo_url language="ee"><![CDATA[https://bank.paysera.com/assets/image/payment_types/nordealv.png]]></logo_url>
+            <title language="ee"><![CDATA[JSC pank "Nordea" Latvia]]></title>
+            <logo_url language="et"><![CDATA[https://bank.paysera.com/assets/image/payment_types/nordealv.png]]></logo_url>
+            <title language="et"><![CDATA[JSC pank "Nordea" Latvia]]></title>
+            <logo_url language="pl"><![CDATA[https://bank.paysera.com/assets/image/payment_types/nordealv.png]]></logo_url>
+            <title language="pl"><![CDATA[AB bank Nordea Łotwa]]></title>
+            <logo_url language="bg"><![CDATA[https://bank.paysera.com/assets/image/payment_types/nordealv.png]]></logo_url>
+            <title language="bg"><![CDATA[JSC bank "Nordea" Latvia]]></title>
+            <min amount="15" currency="EUR" />
+            <is_iban>1</is_iban>
+            <base_currency><![CDATA[EUR]]></base_currency>
+         </payment_type>
+      </payment_group>
+   </country>
+</payment_types_document>

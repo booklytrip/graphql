@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Paysera getPaymentMethods should return payment methods in correct format 1`] = `
+Array [
+  Object {
+    "country": "lv",
+    "group": "e-banking",
+    "id": "parexlv",
+    "logo": "https://bank.paysera.com/assets/image/payment_types/parexlv.png",
+    "name": "AB Citadele bankas Latvija",
+  },
+  Object {
+    "country": "lv",
+    "group": "e-banking",
+    "id": "nordealv",
+    "logo": "https://bank.paysera.com/assets/image/payment_types/nordealv.png",
+    "name": "AB Nordea bankas Latvija",
+  },
+]
+`;

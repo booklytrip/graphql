@@ -1,0 +1,54 @@
+#image: registry.gitlab.com/derihov/ci_test:latest
+
+
+stages:
+  - build
+  - test
+  - release
+  - deploy
+
+variables:
+  CONTAINER_TEST_IMAGE: registry.gitlab.com/bookly/graphql:$CI_BUILD_REF
+  CONTAINER_RELEASE_IMAGE: registry.gitlab.com/bookly/graphql:latest
+
+before_script:
+  - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.gitlab.com
+
+build:
+  stage: build
+  script:
+    - docker build --pull -t $CONTAINER_TEST_IMAGE .
+    - docker push $CONTAINER_TEST_IMAGE
+  only:
+    - master
+  tags:
+    - production
+
+test:
+  stage: test
+  script:
+    - docker run $CONTAINER_TEST_IMAGE bash -c ./node_modules/jest/bin/jest.js
+  tags:
+    - production
+
+release:
+  stage: release
+  script:
+    - docker pull $CONTAINER_TEST_IMAGE
+    - docker tag $CONTAINER_TEST_IMAGE $CONTAINER_RELEASE_IMAGE
+    - docker push $CONTAINER_RELEASE_IMAGE
+  only:
+    - master
+  environment: production
+  tags:
+    - production
+
+deploy:
+  stage: deploy
+  script:
+    - docker-compose up -d
+  only:
+    - master
+  environment: production
+  tags:
+    - production
